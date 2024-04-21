@@ -1,0 +1,7 @@
+LEXICAL ANALYZER FOR PASCAL
+To run the program, go to the directory of the folder and open in linux terminal. Run the following commands in order:
+1) lex ans.l
+2) gcc -lfl lex.yy.c
+3) ./a.out < input.pas (./a.out < <filename>)
+
+The first command produces a c file lex.yy.c which acts as lexer. The c file is compiled and takes as input a sample input program in pascal. The output is displayed on the terminal. It splits the input program into tokens and prints the line number, token number and symbol name (in case of int and id tokens). The symbols have ^ for id and # for integer values.
